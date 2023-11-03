@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://byv8gp2peqrxk"]
+
+[ext_resource type="Script" path="res://heroes/boris/boris.gd" id="1_3hpqk"]
+[ext_resource type="Texture2D" uid="uid://c08ify6vkjskj" path="res://графика/герои/борис/борис.png" id="1_u8h22"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bwfuc"]
+size = Vector2(1.81818, 0.727272)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2h7dt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_u8h22")
+}],
+"loop": true,
+"name": &"idel",
+"speed": 5.0
+}]
+
+[node name="Boris" type="CharacterBody2D"]
+script = ExtResource("1_3hpqk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-7.62939e-06, 67)
+scale = Vector2(5.5, 5.5)
+shape = SubResource("RectangleShape2D_bwfuc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-7.62939e-06, -5.96046e-08)
+scale = Vector2(5.5, 5.5)
+sprite_frames = SubResource("SpriteFrames_2h7dt")
+animation = &"idel"
