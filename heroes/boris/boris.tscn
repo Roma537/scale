@@ -63,11 +63,6 @@ offset_bottom = -81.0
 theme_override_fonts/font = ExtResource("5_tdgmy")
 theme_override_font_sizes/font_size = 20
 
-[node name="timerForDiolog" type="Timer" parent="."]
-wait_time = 1.963
-one_shot = true
-autostart = true
-
 [node name="DarkVuport" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(-369, -95)
@@ -75,4 +70,3 @@ texture = ExtResource("6_yi5b2")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
-[connection signal="timeout" from="timerForDiolog" to="." method="_on_timer_for_diolog_timeout"]
