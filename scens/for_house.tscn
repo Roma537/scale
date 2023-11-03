@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://db4xfxwcg0spx" path="res://графика/плитка/новая/графика 1.png" id="4_qoo5o"]
 [ext_resource type="Script" path="res://heroes/GG/player2.gd" id="5_7ey6d"]
 [ext_resource type="Texture2D" uid="uid://8pd7i0cvjye4" path="res://графика/главный герой/гг.png" id="6_n6e4o"]
-[ext_resource type="PackedScene" uid="uid://byv8gp2peqrxk" path="res://heroes/boris/character_body_2d.tscn" id="7_76r5a"]
+[ext_resource type="PackedScene" uid="uid://byv8gp2peqrxk" path="res://heroes/boris/boris.tscn" id="7_76r5a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dgjj3"]
 texture = ExtResource("4_qoo5o")
