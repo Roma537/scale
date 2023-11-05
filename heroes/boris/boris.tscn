@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://byv8gp2peqrxk"]
+[gd_scene load_steps=11 format=3 uid="uid://byv8gp2peqrxk"]
 
 [ext_resource type="Script" path="res://heroes/boris/boris.gd" id="1_3hpqk"]
 [ext_resource type="Texture2D" uid="uid://c08ify6vkjskj" path="res://графика/герои/борис/борис.png" id="1_u8h22"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://83mip7ywq1dk" path="res://графика/спрайты/диологовое окно2.png" id="4_o5uam"]
 [ext_resource type="FontFile" uid="uid://1pelfg0ekie1" path="res://font/Hardpixel.OTF" id="5_tdgmy"]
 [ext_resource type="Texture2D" uid="uid://nmqa2wytmksv" path="res://графика/спрайты/продолжение следует.jpg" id="6_yi5b2"]
+[ext_resource type="Texture2D" uid="uid://c414vh3ejwl2k" path="res://графика/button/icons8-q-50.png" id="7_5st3g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bwfuc"]
 size = Vector2(1.81818, 0.727272)
@@ -68,5 +69,17 @@ visible = false
 position = Vector2(-369, -95)
 texture = ExtResource("6_yi5b2")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="q" type="TextureButton" parent="CanvasLayer"]
+offset_left = 1034.0
+offset_top = 500.0
+offset_right = 1111.0
+offset_bottom = 577.0
+texture_normal = ExtResource("7_5st3g")
+stretch_mode = 5
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="button_down" from="CanvasLayer/q" to="." method="_on_q_button_down"]
+[connection signal="button_up" from="CanvasLayer/q" to="." method="_on_q_button_up"]

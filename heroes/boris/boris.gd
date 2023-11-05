@@ -4,19 +4,26 @@ extends CharacterBody2D
 @onready var dioilogBoris = $"ДиологовоеОкно2"
 @onready var txt = $Label
 @onready var darkVuport = $DarkVuport
+@onready var ui = $CanvasLayer/q
 
 var study = 1
 var enterd = false
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var presedQ = false
 
+func _ready():
+	if Global.ui == false:
+			ui.hide()
+	if Global.ui == true:
+		ui.show()
 
 func _process(delta):
 	if enterd == true:
 		if study == 1:
 			diolog.show()
-		if Input.is_action_pressed("q"):
+		if Input.is_action_pressed("q") or presedQ == true:
 			dioilogBoris.show()
 			diolog.hide()
 			study = 2
@@ -24,7 +31,7 @@ func _process(delta):
 	elif enterd == false:
 		diolog.hide()
 	if study == 2:
-		if Input.is_action_pressed("q"):
+		if Input.is_action_pressed("q") or presedQ == true:
 			study = 3
 			txt.text = 'В этом мире все 
 			могут увиличиваться и 
@@ -33,7 +40,7 @@ func _process(delta):
 			ты так не умеешь.'
 	if study == 3:
 		await get_tree().create_timer(0.2).timeout
-		if Input.is_action_pressed("q"):
+		if Input.is_action_pressed("q") or presedQ == true:
 			study = 4
 			txt.text = 'Это всё 
 			потаму что, ты потерял все
@@ -42,7 +49,7 @@ func _process(delta):
 			не выделятся из всех'
 	if study == 4:
 		await get_tree().create_timer(1).timeout
-		if Input.is_action_pressed("q"):
+		if Input.is_action_pressed("q") or presedQ == true:
 			study = 5
 			darkVuport.show()
 			await get_tree().create_timer(5).timeout
@@ -58,31 +65,9 @@ func _on_area_2d_body_entered(body):
 	if body.name == "player":
 		enterd = true 
 func _on_area_2d_body_exited(body):
-	
 	if body.name == "player":
 		enterd = false
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+func _on_q_button_down():
+	presedQ = true
+func _on_q_button_up():
+	presedQ = false

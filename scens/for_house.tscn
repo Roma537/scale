@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://sxrhvp27q6ak"]
+[gd_scene load_steps=22 format=3 uid="uid://sxrhvp27q6ak"]
 
 [ext_resource type="Texture2D" uid="uid://nmqa2wytmksv" path="res://графика/спрайты/продолжение следует.jpg" id="1_0jjn2"]
 [ext_resource type="Script" path="res://scens/for_house.gd" id="1_6urmx"]
@@ -7,6 +7,9 @@
 [ext_resource type="Script" path="res://heroes/GG/player2.gd" id="5_7ey6d"]
 [ext_resource type="Texture2D" uid="uid://8pd7i0cvjye4" path="res://графика/главный герой/гг.png" id="6_n6e4o"]
 [ext_resource type="PackedScene" uid="uid://byv8gp2peqrxk" path="res://heroes/boris/boris.tscn" id="7_76r5a"]
+[ext_resource type="Texture2D" uid="uid://fejdxswi2rnc" path="res://графика/button/free-icon-arrow-button-6283272 (2).png" id="7_mmpx1"]
+[ext_resource type="Texture2D" uid="uid://c5p1gde3jhvub" path="res://графика/button/free-icon-arrow-button-6283227 (2).png" id="8_sv8il"]
+[ext_resource type="Texture2D" uid="uid://bcg6brnjpokl7" path="res://графика/button/up.png" id="9_t6ndk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dgjj3"]
 texture = ExtResource("4_qoo5o")
@@ -152,5 +155,38 @@ sprite_frames = SubResource("SpriteFrames_tam61")
 animation = &"idel"
 autoplay = "idel"
 
+[node name="CanvasLayer" type="CanvasLayer" parent="player"]
+
+[node name="left" type="TextureButton" parent="player/CanvasLayer"]
+offset_left = 27.0
+offset_top = 500.0
+offset_right = 104.0
+offset_bottom = 577.0
+texture_normal = ExtResource("7_mmpx1")
+stretch_mode = 5
+
+[node name="right" type="TextureButton" parent="player/CanvasLayer"]
+offset_left = 278.0
+offset_top = 500.0
+offset_right = 355.0
+offset_bottom = 577.0
+texture_normal = ExtResource("8_sv8il")
+stretch_mode = 5
+
+[node name="up" type="TextureButton" parent="player/CanvasLayer"]
+offset_left = 157.0
+offset_top = 416.0
+offset_right = 234.0
+offset_bottom = 493.0
+texture_normal = ExtResource("9_t6ndk")
+stretch_mode = 5
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("7_76r5a")]
 position = Vector2(949, 402)
+
+[connection signal="button_down" from="player/CanvasLayer/left" to="player" method="_on_left_button_down"]
+[connection signal="button_up" from="player/CanvasLayer/left" to="player" method="_on_left_button_up"]
+[connection signal="button_down" from="player/CanvasLayer/right" to="player" method="_on_right_button_down"]
+[connection signal="button_up" from="player/CanvasLayer/right" to="player" method="_on_right_button_up"]
+[connection signal="button_down" from="player/CanvasLayer/up" to="player" method="_on_up_button_down"]
+[connection signal="button_up" from="player/CanvasLayer/up" to="player" method="_on_up_button_up"]
