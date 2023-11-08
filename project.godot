@@ -18,9 +18,12 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://global.gd"
+Menu="*res://menu.gd"
+Leng="*res://leng.gd"
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="viewport"
 
 [input]

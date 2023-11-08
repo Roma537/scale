@@ -1,13 +1,16 @@
 extends Node2D
 
-@onready var mobil = $mobil
-@onready var pc = $pc
+@onready var ru = $ru
+@onready var en = $en
 
 # кнопки и их действия
 func _on_quit_button_down():
 	get_tree().quit()
 func _on_play_button_down():
-	get_tree().change_scene_to_file("res://scens/levels/level1.tscn")
+	if Menu.newMenu == false:
+		get_tree().change_scene_to_file("res://scens/levels/level1.tscn")
+	if Menu.newMenu == true:
+		get_tree().change_scene_to_file("res://scens/menu_for_level.tscn")
 
 
 
@@ -18,10 +21,10 @@ func _on_play_button_down():
 
 
 func _on_mobil_pressed():
-	mobil.hide()
-	pc.show()
-	Global.ui = true
+	ru.hide()
+	en.show()
+	Leng.leng = "ru"
 func _on_pc_pressed():
-	mobil.show()
-	pc.hide()
-	Global.ui = false
+	ru.show()
+	en.hide()
+	Leng.leng = "en"

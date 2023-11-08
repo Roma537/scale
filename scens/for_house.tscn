@@ -181,6 +181,13 @@ offset_bottom = 493.0
 texture_normal = ExtResource("9_t6ndk")
 stretch_mode = 5
 
+[node name="Button" type="Button" parent="player/CanvasLayer"]
+offset_left = 60.0
+offset_top = 79.0
+offset_right = 137.0
+offset_bottom = 100.0
+text = "выйти"
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("7_76r5a")]
 position = Vector2(949, 402)
 
@@ -190,3 +197,4 @@ position = Vector2(949, 402)
 [connection signal="button_up" from="player/CanvasLayer/right" to="player" method="_on_right_button_up"]
 [connection signal="button_down" from="player/CanvasLayer/up" to="player" method="_on_up_button_down"]
 [connection signal="button_up" from="player/CanvasLayer/up" to="player" method="_on_up_button_up"]
+[connection signal="pressed" from="player/CanvasLayer/Button" to="." method="_on_button_pressed"]

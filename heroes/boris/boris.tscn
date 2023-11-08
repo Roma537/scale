@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c08ify6vkjskj" path="res://графика/герои/борис/борис.png" id="1_u8h22"]
 [ext_resource type="Texture2D" uid="uid://c08ych1avv088" path="res://графика/спрайты/диологовое окно для двери.png" id="3_ii5bm"]
 [ext_resource type="Texture2D" uid="uid://83mip7ywq1dk" path="res://графика/спрайты/диологовое окно2.png" id="4_o5uam"]
-[ext_resource type="FontFile" uid="uid://1pelfg0ekie1" path="res://font/Hardpixel.OTF" id="5_tdgmy"]
+[ext_resource type="FontFile" uid="uid://b2axlha0pocfi" path="res://font/Hardpixel.OTF" id="5_tdgmy"]
 [ext_resource type="Texture2D" uid="uid://nmqa2wytmksv" path="res://графика/спрайты/продолжение следует.jpg" id="6_yi5b2"]
 [ext_resource type="Texture2D" uid="uid://c414vh3ejwl2k" path="res://графика/button/icons8-q-50.png" id="7_5st3g"]
 

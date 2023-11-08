@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://b2axlha0pocfi"
-path="res://.godot/imported/Hardpixel.OTF-ed9c204ea8cbf476462bebf5676e2447.fontdata"
+uid="uid://dmc0nkjh613td"
+path="res://.godot/imported/PressStart2P-Regular.ttf-1dca1ff03738d8a3041c87f9868e7359.fontdata"
 
 [deps]
 
-source_file="res://font/Hardpixel.OTF"
-dest_files=["res://.godot/imported/Hardpixel.OTF-ed9c204ea8cbf476462bebf5676e2447.fontdata"]
+source_file="res://font/PressStart2P-Regular.ttf"
+dest_files=["res://.godot/imported/PressStart2P-Regular.ttf-1dca1ff03738d8a3041c87f9868e7359.fontdata"]
 
 [params]
 

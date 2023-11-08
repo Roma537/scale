@@ -50,7 +50,7 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 40
 text = "Quit"
 
-[node name="pc" type="TextureButton" parent="."]
+[node name="en" type="TextureButton" parent="."]
 visible = false
 offset_left = 525.0
 offset_top = 524.0
@@ -58,7 +58,7 @@ offset_right = 625.0
 offset_bottom = 624.0
 texture_normal = ExtResource("1_e70cd")
 
-[node name="Label" type="Label" parent="pc"]
+[node name="Label" type="Label" parent="en"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -69,29 +69,30 @@ offset_right = -41.0
 offset_bottom = -39.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "pc"
+text = "en
+"
 
-[node name="mobil" type="TextureButton" parent="."]
+[node name="ru" type="TextureButton" parent="."]
 offset_left = 525.0
 offset_top = 524.0
 offset_right = 625.0
 offset_bottom = 624.0
 texture_normal = ExtResource("1_e70cd")
 
-[node name="Label" type="Label" parent="mobil"]
+[node name="Label" type="Label" parent="ru"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 28.0
+offset_left = 40.0
 offset_top = 36.0
-offset_right = -28.0
+offset_right = -16.0
 offset_bottom = -38.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "mobil"
+text = "ru"
 
 [connection signal="button_down" from="play" to="." method="_on_play_button_down"]
 [connection signal="button_down" from="quit" to="." method="_on_quit_button_down"]
-[connection signal="pressed" from="pc" to="." method="_on_pc_pressed"]
-[connection signal="pressed" from="mobil" to="." method="_on_mobil_pressed"]
+[connection signal="pressed" from="en" to="." method="_on_pc_pressed"]
+[connection signal="pressed" from="ru" to="." method="_on_mobil_pressed"]
