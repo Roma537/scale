@@ -14,4 +14,13 @@ offset_right = 86.0
 offset_bottom = 39.0
 text = "выйти"
 
+[node name="level_1" type="Button" parent="."]
+offset_left = 124.0
+offset_top = 88.0
+offset_right = 211.0
+offset_bottom = 175.0
+theme_override_font_sizes/font_size = 50
+text = "1"
+
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="level_1" to="." method="_on_level_1_pressed"]

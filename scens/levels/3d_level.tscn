@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2dmdqcfc73kr"]
+
+[ext_resource type="PackedScene" uid="uid://numm1kehyyfx" path="res://heroes/GG/player_3D.tscn" id="1_7ib5h"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_626st"]
+size = Vector3(100, 0.5, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4abk4"]
+size = Vector3(100, 0.5, 100)
+
+[node name="3D level" type="StaticBody3D"]
+
+[node name="flor mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_626st")
+
+[node name="flor colision" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_4abk4")
+
+[node name="player" parent="." instance=ExtResource("1_7ib5h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.1187, 1.81133, -14.4252)
+
+[node name="Camera3D" type="Camera3D" parent="player"]
+transform = Transform3D(0.325898, 0, -0.945405, 0, 1, 0, 0.945405, 0, 0.325898, -11.1674, 4.05408, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.12793, 0.991783, 3.45881e-09, -0.576608, 0.0743767, 0.813629, 0.806943, -0.104088, 0.581385, 0, 5.36248, 0)
+shadow_enabled = true
