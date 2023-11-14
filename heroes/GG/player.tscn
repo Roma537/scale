@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ultel1nmqjeq"]
+[gd_scene load_steps=15 format=3 uid="uid://2sgdvvahti3r"]
 
 [ext_resource type="Script" path="res://heroes/GG/player.gd" id="1_ao2ft"]
 [ext_resource type="Texture2D" uid="uid://8pd7i0cvjye4" path="res://графика/главный герой/гг.png" id="1_dm03l"]

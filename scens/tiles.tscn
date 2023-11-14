@@ -1,0 +1,466 @@
+[gd_scene load_steps=116 format=3 uid="uid://bjiivol3r7yve"]
+
+[ext_resource type="PackedScene" uid="uid://c2drk7r6riu6n" path="res://asets/GLTF format/arrow.glb" id="1_qs577"]
+[ext_resource type="PackedScene" uid="uid://cfby6tcjder3s" path="res://asets/GLTF format/arrows.glb" id="2_vvgjj"]
+[ext_resource type="PackedScene" uid="uid://cignsmv0c80pp" path="res://asets/GLTF format/barrel.glb" id="3_4mcj0"]
+[ext_resource type="PackedScene" uid="uid://coc8pysqrumib" path="res://asets/GLTF format/block.glb" id="4_h7o6e"]
+[ext_resource type="PackedScene" uid="uid://bhmdji542o46u" path="res://asets/GLTF format/blockCliff.glb" id="5_vr464"]
+[ext_resource type="PackedScene" uid="uid://c7onkwt5k4x3w" path="res://asets/GLTF format/blockCliffCorner.glb" id="6_un4e3"]
+[ext_resource type="PackedScene" uid="uid://5r2uysj6dyeg" path="res://asets/GLTF format/blockCornerLarge.glb" id="7_proii"]
+[ext_resource type="PackedScene" uid="uid://dbh122ef08acv" path="res://asets/GLTF format/blockCornerSmall.glb" id="8_qs8e6"]
+[ext_resource type="PackedScene" uid="uid://ng8l8bh00psa" path="res://asets/GLTF format/blockCurve.glb" id="9_3fahr"]
+[ext_resource type="PackedScene" uid="uid://c4qwy1c0avhkq" path="res://asets/GLTF format/blockCurveHalf.glb" id="10_66sl6"]
+[ext_resource type="PackedScene" uid="uid://dkkmb5bifm6r5" path="res://asets/GLTF format/blockCurveLow.glb" id="11_b8khq"]
+[ext_resource type="PackedScene" uid="uid://mdi1xbvnemf2" path="res://asets/GLTF format/blockDirt.glb" id="12_kg3bw"]
+[ext_resource type="PackedScene" uid="uid://bwokc6npwck6p" path="res://asets/GLTF format/blockDirtHalf.glb" id="13_o1nbg"]
+[ext_resource type="PackedScene" uid="uid://cnfh03lwqxvrf" path="res://asets/GLTF format/blockDirtRamp.glb" id="14_almb1"]
+[ext_resource type="PackedScene" uid="uid://b6bccxlm6qgt4" path="res://asets/GLTF format/blockDirtRampHalf.glb" id="15_tamu4"]
+[ext_resource type="PackedScene" uid="uid://pldwbclnbusd" path="res://asets/GLTF format/blockEnd.glb" id="16_0tchp"]
+[ext_resource type="PackedScene" uid="uid://d2jdsx1184r4k" path="res://asets/GLTF format/blockHalf.glb" id="17_yv3ng"]
+[ext_resource type="PackedScene" uid="uid://b8gpeofe44mye" path="res://asets/GLTF format/blockHexagon.glb" id="18_hl1hp"]
+[ext_resource type="PackedScene" uid="uid://c2vjsdkgexxpb" path="res://asets/GLTF format/blockHexagonLow.glb" id="19_588js"]
+[ext_resource type="PackedScene" uid="uid://pcldfhos8cs3" path="res://asets/GLTF format/blockLarge.glb" id="20_usjoc"]
+[ext_resource type="PackedScene" uid="uid://d3olj2wj1m3yp" path="res://asets/GLTF format/blockLevel.glb" id="21_nwl2b"]
+[ext_resource type="PackedScene" uid="uid://dyacvslxyiwp3" path="res://asets/GLTF format/blockLong.glb" id="22_cfxpq"]
+[ext_resource type="PackedScene" uid="uid://bqmfhwormy6f5" path="res://asets/GLTF format/blockMoving.glb" id="23_32fgd"]
+[ext_resource type="PackedScene" uid="uid://cmnhmhfsvu7j3" path="res://asets/GLTF format/blockMovingBlue.glb" id="24_hv6ko"]
+[ext_resource type="PackedScene" uid="uid://6resqo3be2fk" path="res://asets/GLTF format/blockMovingLarge.glb" id="25_gphy7"]
+[ext_resource type="PackedScene" uid="uid://uoxe0nyhr40w" path="res://asets/GLTF format/blockQuarter.glb" id="26_o6mql"]
+[ext_resource type="PackedScene" uid="uid://cbcc0uxibgvs2" path="res://asets/GLTF format/blockRounded.glb" id="27_33iys"]
+[ext_resource type="PackedScene" uid="uid://tmtqokmqg4dy" path="res://asets/GLTF format/blockRoundedLarge.glb" id="28_5at44"]
+[ext_resource type="PackedScene" uid="uid://bcjpx5c3pws2l" path="res://asets/GLTF format/blockRoundedLong.glb" id="29_mynyd"]
+[ext_resource type="PackedScene" uid="uid://dmxyr88l0r6y4" path="res://asets/GLTF format/blockRoundedLow.glb" id="30_oh18t"]
+[ext_resource type="PackedScene" uid="uid://bijelspkt3lm4" path="res://asets/GLTF format/blockRoundedLowLong.glb" id="31_rm03e"]
+[ext_resource type="PackedScene" uid="uid://dph4k228lvh0w" path="res://asets/GLTF format/blockSlope.glb" id="32_ix8ne"]
+[ext_resource type="PackedScene" uid="uid://dxtt8imxbu7bg" path="res://asets/GLTF format/blockSlopeHalf.glb" id="33_o1mil"]
+[ext_resource type="PackedScene" uid="uid://b7k0mqq0aijyr" path="res://asets/GLTF format/blockSnow.glb" id="34_gqdm3"]
+[ext_resource type="PackedScene" uid="uid://cldpkackyk0r" path="res://asets/GLTF format/blockSnowCliff.glb" id="35_ncps1"]
+[ext_resource type="PackedScene" uid="uid://b5fi6vi04in5d" path="res://asets/GLTF format/blockSnowCliffCorner.glb" id="36_4wljd"]
+[ext_resource type="PackedScene" uid="uid://bbge2v2l46w6a" path="res://asets/GLTF format/blockSnowCornerLarge.glb" id="37_hq7ec"]
+[ext_resource type="PackedScene" uid="uid://dsxjykltcoojb" path="res://asets/GLTF format/blockSnowCornerSmall.glb" id="38_yv5cw"]
+[ext_resource type="PackedScene" uid="uid://dmjv303tqaiwu" path="res://asets/GLTF format/blockSnowCurve.glb" id="39_80vsv"]
+[ext_resource type="PackedScene" uid="uid://jysqqyqmubwo" path="res://asets/GLTF format/blockSnowCurveHalf.glb" id="40_0mn7m"]
+[ext_resource type="PackedScene" uid="uid://dsvggpqtxj4iv" path="res://asets/GLTF format/blockSnowCurveLow.glb" id="41_ijh0k"]
+[ext_resource type="PackedScene" uid="uid://mx6t0gk2k0wu" path="res://asets/GLTF format/blockSnowEnd.glb" id="42_eeimn"]
+[ext_resource type="PackedScene" uid="uid://cfqv0yonhvnvt" path="res://asets/GLTF format/blockSnowHalf.glb" id="43_t6yb7"]
+[ext_resource type="PackedScene" uid="uid://20hmes1hnd8j" path="res://asets/GLTF format/blockSnowHexagon.glb" id="44_swt7v"]
+[ext_resource type="PackedScene" uid="uid://csrev210dc7d2" path="res://asets/GLTF format/blockSnowHexagonLow.glb" id="45_0k1fd"]
+[ext_resource type="PackedScene" uid="uid://cdykdh5e3ca7o" path="res://asets/GLTF format/blockSnowLarge.glb" id="46_fcqwk"]
+[ext_resource type="PackedScene" uid="uid://s8qvt8k18j8i" path="res://asets/GLTF format/blockSnowLevel.glb" id="47_20kh2"]
+[ext_resource type="PackedScene" uid="uid://dcbde055syd66" path="res://asets/GLTF format/blockSnowLong.glb" id="48_5gw4k"]
+[ext_resource type="PackedScene" uid="uid://ce4n482uxr3mg" path="res://asets/GLTF format/blockSnowQuarter.glb" id="49_ssgk3"]
+[ext_resource type="PackedScene" uid="uid://c7o6icg0bunjh" path="res://asets/GLTF format/blockSnowRounded.glb" id="50_nw38q"]
+[ext_resource type="PackedScene" uid="uid://bw0bbgjkr1ikb" path="res://asets/GLTF format/blockSnowRoundedLarge.glb" id="51_rcxln"]
+[ext_resource type="PackedScene" uid="uid://x60oilk2obki" path="res://asets/GLTF format/blockSnowRoundedLong.glb" id="52_175gt"]
+[ext_resource type="PackedScene" uid="uid://g1oyiklvseqy" path="res://asets/GLTF format/blockSnowRoundedLow.glb" id="53_i3gyi"]
+[ext_resource type="PackedScene" uid="uid://csamr5ux1n745" path="res://asets/GLTF format/blockSnowRoundedLowLong.glb" id="54_ral21"]
+[ext_resource type="PackedScene" uid="uid://dg7cxclde7kh0" path="res://asets/GLTF format/blockSnowSlope.glb" id="55_gceia"]
+[ext_resource type="PackedScene" uid="uid://bu4i6o0fceso4" path="res://asets/GLTF format/blockSnowSlopeHalf.glb" id="56_f3k5b"]
+[ext_resource type="PackedScene" uid="uid://x4fxlsqwcfvb" path="res://asets/GLTF format/bomb.glb" id="57_oq7jq"]
+[ext_resource type="PackedScene" uid="uid://dxu4n118b2n7l" path="res://asets/GLTF format/bridge.glb" id="58_2rxtu"]
+[ext_resource type="PackedScene" uid="uid://cycc1txdd023m" path="res://asets/GLTF format/bridgeHalf.glb" id="59_6uyqf"]
+[ext_resource type="PackedScene" uid="uid://b5m6h7ba13mre" path="res://asets/GLTF format/bridgeRamp.glb" id="60_hp23k"]
+[ext_resource type="PackedScene" uid="uid://bgidm2vrucykx" path="res://asets/GLTF format/buttonRound.glb" id="61_3qv58"]
+[ext_resource type="PackedScene" uid="uid://bvs7vvr5cnts0" path="res://asets/GLTF format/buttonSquare.glb" id="62_fleru"]
+[ext_resource type="PackedScene" uid="uid://clcb70detf2xq" path="res://asets/GLTF format/chest.glb" id="63_jv3q6"]
+[ext_resource type="PackedScene" uid="uid://cau55xixfx823" path="res://asets/GLTF format/coinBronze.glb" id="64_nomjp"]
+[ext_resource type="PackedScene" uid="uid://diue5bhew26e5" path="res://asets/GLTF format/coinGold.glb" id="65_k1avr"]
+[ext_resource type="PackedScene" uid="uid://casb6xlpe7ghd" path="res://asets/GLTF format/coinSilver.glb" id="66_bx527"]
+[ext_resource type="PackedScene" uid="uid://bkpbgekswg2rw" path="res://asets/GLTF format/crate.glb" id="67_kvb1a"]
+[ext_resource type="PackedScene" uid="uid://tkumat4t7pui" path="res://asets/GLTF format/crateItem.glb" id="68_1qp36"]
+[ext_resource type="PackedScene" uid="uid://bh80ah36vp3am" path="res://asets/GLTF format/crateItemStrong.glb" id="69_17wad"]
+[ext_resource type="PackedScene" uid="uid://c4dtrj1fe2mgn" path="res://asets/GLTF format/crateStrong.glb" id="70_3ctnd"]
+[ext_resource type="PackedScene" uid="uid://dqb02u8uc4igm" path="res://asets/GLTF format/doorClosed.glb" id="71_g3f4d"]
+[ext_resource type="PackedScene" uid="uid://1etein85hx2y" path="res://asets/GLTF format/doorLargeClosed.glb" id="72_flyap"]
+[ext_resource type="PackedScene" uid="uid://37vr7c8ps21i" path="res://asets/GLTF format/doorLargeOpen.glb" id="73_xlj7r"]
+[ext_resource type="PackedScene" uid="uid://badws54w7ckux" path="res://asets/GLTF format/doorOpen.glb" id="74_yt8bp"]
+[ext_resource type="PackedScene" uid="uid://cnvci435j28nk" path="res://asets/GLTF format/fence.glb" id="75_sp0u4"]
+[ext_resource type="PackedScene" uid="uid://64fgvbyef137" path="res://asets/GLTF format/fenceBroken.glb" id="76_m5e5o"]
+[ext_resource type="PackedScene" uid="uid://cg7fu8caw46bt" path="res://asets/GLTF format/fenceCorner.glb" id="77_xxhx3"]
+[ext_resource type="PackedScene" uid="uid://cync53a5jwnlv" path="res://asets/GLTF format/fenceCornerCurved.glb" id="78_nipr3"]
+[ext_resource type="PackedScene" uid="uid://dfpiyjp8elef5" path="res://asets/GLTF format/fenceLow.glb" id="79_qf8hn"]
+[ext_resource type="PackedScene" uid="uid://bet0r3dxarwr0" path="res://asets/GLTF format/fenceLowBroken.glb" id="80_460rj"]
+[ext_resource type="PackedScene" uid="uid://c6q3ekkeynrsy" path="res://asets/GLTF format/fenceLowCorner.glb" id="81_ujgfd"]
+[ext_resource type="PackedScene" uid="uid://q2rko0pc8ja8" path="res://asets/GLTF format/fenceLowCornerCurved.glb" id="82_uc80q"]
+[ext_resource type="PackedScene" uid="uid://bn0nciydeo7yc" path="res://asets/GLTF format/flag.glb" id="83_x76d3"]
+[ext_resource type="PackedScene" uid="uid://drgjlga4d3yqr" path="res://asets/GLTF format/flowers.glb" id="84_3gjah"]
+[ext_resource type="PackedScene" uid="uid://blpxetnwg17p0" path="res://asets/GLTF format/flowersLow.glb" id="85_lbqwt"]
+[ext_resource type="PackedScene" uid="uid://cyx7bb7tx4t2a" path="res://asets/GLTF format/heart.glb" id="86_5vx8d"]
+[ext_resource type="PackedScene" uid="uid://x1o6hrkhsnij" path="res://asets/GLTF format/hedge.glb" id="87_ulmrl"]
+[ext_resource type="PackedScene" uid="uid://cqmhkd1da07ga" path="res://asets/GLTF format/hedgeCorner.glb" id="88_c2fi4"]
+[ext_resource type="PackedScene" uid="uid://c2g7ovakix56y" path="res://asets/GLTF format/jewel.glb" id="89_1nis6"]
+[ext_resource type="PackedScene" uid="uid://dth16lpkmwta2" path="res://asets/GLTF format/key.glb" id="90_d5805"]
+[ext_resource type="PackedScene" uid="uid://cssaobe8vc0op" path="res://asets/GLTF format/ladder.glb" id="91_xpsxs"]
+[ext_resource type="PackedScene" uid="uid://dw3djv05fq1vi" path="res://asets/GLTF format/ladderBroken.glb" id="92_cmgmn"]
+[ext_resource type="PackedScene" uid="uid://dyi87m1vkb17" path="res://asets/GLTF format/ladderLong.glb" id="93_ky5gk"]
+[ext_resource type="PackedScene" uid="uid://cvfrvsww3a83h" path="res://asets/GLTF format/lever.glb" id="94_pdmw1"]
+[ext_resource type="PackedScene" uid="uid://ujc8iw8nwp15" path="res://asets/GLTF format/lock.glb" id="95_hspq8"]
+[ext_resource type="PackedScene" uid="uid://4wghrbhka4ur" path="res://asets/GLTF format/mushrooms.glb" id="96_1pa47"]
+[ext_resource type="PackedScene" uid="uid://bgok3valg1tpy" path="res://asets/GLTF format/plant.glb" id="97_4cfqo"]
+[ext_resource type="PackedScene" uid="uid://d4c6awryol25t" path="res://asets/GLTF format/platform.glb" id="98_s6rpr"]
+[ext_resource type="PackedScene" uid="uid://c8da8uns3tvns" path="res://asets/GLTF format/poles.glb" id="99_614hj"]
+[ext_resource type="PackedScene" uid="uid://d3gkdncs54jcr" path="res://asets/GLTF format/rocks.glb" id="100_nl2b4"]
+[ext_resource type="PackedScene" uid="uid://buc8k7h85ap1l" path="res://asets/GLTF format/saw.glb" id="101_q2ntq"]
+[ext_resource type="PackedScene" uid="uid://csrr7dqy3hicw" path="res://asets/GLTF format/sign.glb" id="102_s66bb"]
+[ext_resource type="PackedScene" uid="uid://b8d3oxp27s0im" path="res://asets/GLTF format/spikeBlock.glb" id="103_17wq0"]
+[ext_resource type="PackedScene" uid="uid://ctx3qeswrspmn" path="res://asets/GLTF format/spikeBlockWide.glb" id="104_uft80"]
+[ext_resource type="PackedScene" uid="uid://dbpl6urv0o6ps" path="res://asets/GLTF format/spikes.glb" id="105_7irfr"]
+[ext_resource type="PackedScene" uid="uid://c584333ws1v0y" path="res://asets/GLTF format/spikesHidden.glb" id="106_he20c"]
+[ext_resource type="PackedScene" uid="uid://bn4nmgtbl54oo" path="res://asets/GLTF format/spikesLarge.glb" id="107_gm0ks"]
+[ext_resource type="PackedScene" uid="uid://nxgmumd4hge2" path="res://asets/GLTF format/stones.glb" id="108_fts5y"]
+[ext_resource type="PackedScene" uid="uid://dphn2tb315iki" path="res://asets/GLTF format/tree.glb" id="109_ysv5u"]
+[ext_resource type="PackedScene" uid="uid://c0wk87j7f72a7" path="res://asets/GLTF format/treePine.glb" id="110_ytb1m"]
+[ext_resource type="PackedScene" uid="uid://c56xcuf4j8eaw" path="res://asets/GLTF format/treePineSmall.glb" id="111_mfei5"]
+[ext_resource type="PackedScene" uid="uid://ho7sqvbwa72c" path="res://asets/GLTF format/treePineSmallSnow.glb" id="112_01wgl"]
+[ext_resource type="PackedScene" uid="uid://bctlb87kalw32" path="res://asets/GLTF format/treePineSnow.glb" id="113_gctfn"]
+[ext_resource type="PackedScene" uid="uid://k3hti2dh1gss" path="res://asets/GLTF format/treeSnow.glb" id="114_x65gh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bug2a"]
+size = Vector3(1.98093, 0.48727, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="arrow" parent="." instance=ExtResource("1_qs577")]
+visible = false
+
+[node name="arrows" parent="." instance=ExtResource("2_vvgjj")]
+visible = false
+
+[node name="barrel" parent="." instance=ExtResource("3_4mcj0")]
+visible = false
+
+[node name="block" parent="." instance=ExtResource("4_h7o6e")]
+visible = false
+
+[node name="blockCliff" parent="." instance=ExtResource("5_vr464")]
+visible = false
+
+[node name="blockCliffCorner" parent="." instance=ExtResource("6_un4e3")]
+visible = false
+
+[node name="blockCornerLarge" parent="." instance=ExtResource("7_proii")]
+visible = false
+
+[node name="blockCornerSmall" parent="." instance=ExtResource("8_qs8e6")]
+visible = false
+
+[node name="blockCurve" parent="." instance=ExtResource("9_3fahr")]
+visible = false
+
+[node name="blockCurveHalf" parent="." instance=ExtResource("10_66sl6")]
+visible = false
+
+[node name="blockCurveLow" parent="." instance=ExtResource("11_b8khq")]
+visible = false
+
+[node name="blockDirt" parent="." instance=ExtResource("12_kg3bw")]
+visible = false
+
+[node name="blockDirtHalf" parent="." instance=ExtResource("13_o1nbg")]
+visible = false
+
+[node name="blockDirtRamp" parent="." instance=ExtResource("14_almb1")]
+visible = false
+
+[node name="blockDirtRampHalf" parent="." instance=ExtResource("15_tamu4")]
+visible = false
+
+[node name="blockEnd" parent="." instance=ExtResource("16_0tchp")]
+visible = false
+
+[node name="blockHalf" parent="." instance=ExtResource("17_yv3ng")]
+visible = false
+
+[node name="blockHexagon" parent="." instance=ExtResource("18_hl1hp")]
+visible = false
+
+[node name="blockHexagonLow" parent="." instance=ExtResource("19_588js")]
+visible = false
+
+[node name="blockLarge" parent="." instance=ExtResource("20_usjoc")]
+visible = false
+
+[node name="blockLevel" parent="." instance=ExtResource("21_nwl2b")]
+visible = false
+
+[node name="blockLong" parent="." instance=ExtResource("22_cfxpq")]
+visible = false
+
+[node name="blockMoving" parent="." instance=ExtResource("23_32fgd")]
+visible = false
+
+[node name="blockMovingBlue" parent="." instance=ExtResource("24_hv6ko")]
+visible = false
+
+[node name="blockMovingLarge" parent="." instance=ExtResource("25_gphy7")]
+visible = false
+
+[node name="blockQuarter" parent="." instance=ExtResource("26_o6mql")]
+visible = false
+
+[node name="blockRounded" parent="." instance=ExtResource("27_33iys")]
+visible = false
+
+[node name="blockRoundedLarge" parent="." instance=ExtResource("28_5at44")]
+visible = false
+
+[node name="blockRoundedLong" parent="." instance=ExtResource("29_mynyd")]
+visible = false
+
+[node name="blockRoundedLow" parent="." instance=ExtResource("30_oh18t")]
+visible = false
+
+[node name="blockRoundedLowLong" parent="." instance=ExtResource("31_rm03e")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="blockRoundedLowLong"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.255993, 0)
+shape = SubResource("BoxShape3D_bug2a")
+
+[node name="blockSlope" parent="." instance=ExtResource("32_ix8ne")]
+visible = false
+
+[node name="blockSlopeHalf" parent="." instance=ExtResource("33_o1mil")]
+visible = false
+
+[node name="blockSnow" parent="." instance=ExtResource("34_gqdm3")]
+visible = false
+
+[node name="blockSnowCliff" parent="." instance=ExtResource("35_ncps1")]
+visible = false
+
+[node name="blockSnowCliffCorner" parent="." instance=ExtResource("36_4wljd")]
+visible = false
+
+[node name="blockSnowCornerLarge" parent="." instance=ExtResource("37_hq7ec")]
+visible = false
+
+[node name="blockSnowCornerSmall" parent="." instance=ExtResource("38_yv5cw")]
+visible = false
+
+[node name="blockSnowCurve" parent="." instance=ExtResource("39_80vsv")]
+visible = false
+
+[node name="blockSnowCurveHalf" parent="." instance=ExtResource("40_0mn7m")]
+visible = false
+
+[node name="blockSnowCurveLow" parent="." instance=ExtResource("41_ijh0k")]
+visible = false
+
+[node name="blockSnowEnd" parent="." instance=ExtResource("42_eeimn")]
+visible = false
+
+[node name="blockSnowHalf" parent="." instance=ExtResource("43_t6yb7")]
+visible = false
+
+[node name="blockSnowHexagon" parent="." instance=ExtResource("44_swt7v")]
+visible = false
+
+[node name="blockSnowHexagonLow" parent="." instance=ExtResource("45_0k1fd")]
+visible = false
+
+[node name="blockSnowLarge" parent="." instance=ExtResource("46_fcqwk")]
+visible = false
+
+[node name="blockSnowLevel" parent="." instance=ExtResource("47_20kh2")]
+visible = false
+
+[node name="blockSnowLong" parent="." instance=ExtResource("48_5gw4k")]
+visible = false
+
+[node name="blockSnowQuarter" parent="." instance=ExtResource("49_ssgk3")]
+visible = false
+
+[node name="blockSnowRounded" parent="." instance=ExtResource("50_nw38q")]
+visible = false
+
+[node name="blockSnowRoundedLarge" parent="." instance=ExtResource("51_rcxln")]
+visible = false
+
+[node name="blockSnowRoundedLong" parent="." instance=ExtResource("52_175gt")]
+visible = false
+
+[node name="blockSnowRoundedLow" parent="." instance=ExtResource("53_i3gyi")]
+visible = false
+
+[node name="blockSnowRoundedLowLong" parent="." instance=ExtResource("54_ral21")]
+visible = false
+
+[node name="blockSnowSlope" parent="." instance=ExtResource("55_gceia")]
+visible = false
+
+[node name="blockSnowSlopeHalf" parent="." instance=ExtResource("56_f3k5b")]
+visible = false
+
+[node name="bomb" parent="." instance=ExtResource("57_oq7jq")]
+visible = false
+
+[node name="bridge" parent="." instance=ExtResource("58_2rxtu")]
+visible = false
+
+[node name="bridgeHalf" parent="." instance=ExtResource("59_6uyqf")]
+visible = false
+
+[node name="bridgeRamp" parent="." instance=ExtResource("60_hp23k")]
+visible = false
+
+[node name="buttonRound" parent="." instance=ExtResource("61_3qv58")]
+visible = false
+
+[node name="buttonSquare" parent="." instance=ExtResource("62_fleru")]
+visible = false
+
+[node name="chest" parent="." instance=ExtResource("63_jv3q6")]
+visible = false
+
+[node name="coinBronze" parent="." instance=ExtResource("64_nomjp")]
+visible = false
+
+[node name="coinGold" parent="." instance=ExtResource("65_k1avr")]
+visible = false
+
+[node name="coinSilver" parent="." instance=ExtResource("66_bx527")]
+visible = false
+
+[node name="crate" parent="." instance=ExtResource("67_kvb1a")]
+visible = false
+
+[node name="crateItem" parent="." instance=ExtResource("68_1qp36")]
+visible = false
+
+[node name="crateItemStrong" parent="." instance=ExtResource("69_17wad")]
+visible = false
+
+[node name="crateStrong" parent="." instance=ExtResource("70_3ctnd")]
+visible = false
+
+[node name="doorClosed" parent="." instance=ExtResource("71_g3f4d")]
+visible = false
+
+[node name="doorLargeClosed" parent="." instance=ExtResource("72_flyap")]
+visible = false
+
+[node name="doorLargeOpen" parent="." instance=ExtResource("73_xlj7r")]
+visible = false
+
+[node name="doorOpen" parent="." instance=ExtResource("74_yt8bp")]
+visible = false
+
+[node name="fence" parent="." instance=ExtResource("75_sp0u4")]
+visible = false
+
+[node name="fenceBroken" parent="." instance=ExtResource("76_m5e5o")]
+visible = false
+
+[node name="fenceCorner" parent="." instance=ExtResource("77_xxhx3")]
+visible = false
+
+[node name="fenceCornerCurved" parent="." instance=ExtResource("78_nipr3")]
+visible = false
+
+[node name="fenceLow" parent="." instance=ExtResource("79_qf8hn")]
+visible = false
+
+[node name="fenceLowBroken" parent="." instance=ExtResource("80_460rj")]
+visible = false
+
+[node name="fenceLowCorner" parent="." instance=ExtResource("81_ujgfd")]
+visible = false
+
+[node name="fenceLowCornerCurved" parent="." instance=ExtResource("82_uc80q")]
+visible = false
+
+[node name="flag" parent="." instance=ExtResource("83_x76d3")]
+visible = false
+
+[node name="flowers" parent="." instance=ExtResource("84_3gjah")]
+visible = false
+
+[node name="flowersLow" parent="." instance=ExtResource("85_lbqwt")]
+visible = false
+
+[node name="heart" parent="." instance=ExtResource("86_5vx8d")]
+visible = false
+
+[node name="hedge" parent="." instance=ExtResource("87_ulmrl")]
+visible = false
+
+[node name="hedgeCorner" parent="." instance=ExtResource("88_c2fi4")]
+visible = false
+
+[node name="jewel" parent="." instance=ExtResource("89_1nis6")]
+visible = false
+
+[node name="key" parent="." instance=ExtResource("90_d5805")]
+visible = false
+
+[node name="ladder" parent="." instance=ExtResource("91_xpsxs")]
+visible = false
+
+[node name="ladderBroken" parent="." instance=ExtResource("92_cmgmn")]
+visible = false
+
+[node name="ladderLong" parent="." instance=ExtResource("93_ky5gk")]
+visible = false
+
+[node name="lever" parent="." instance=ExtResource("94_pdmw1")]
+visible = false
+
+[node name="lock" parent="." instance=ExtResource("95_hspq8")]
+visible = false
+
+[node name="mushrooms" parent="." instance=ExtResource("96_1pa47")]
+visible = false
+
+[node name="plant" parent="." instance=ExtResource("97_4cfqo")]
+visible = false
+
+[node name="platform" parent="." instance=ExtResource("98_s6rpr")]
+visible = false
+
+[node name="poles" parent="." instance=ExtResource("99_614hj")]
+visible = false
+
+[node name="rocks" parent="." instance=ExtResource("100_nl2b4")]
+visible = false
+
+[node name="saw" parent="." instance=ExtResource("101_q2ntq")]
+visible = false
+
+[node name="sign" parent="." instance=ExtResource("102_s66bb")]
+visible = false
+
+[node name="spikeBlock" parent="." instance=ExtResource("103_17wq0")]
+visible = false
+
+[node name="spikeBlockWide" parent="." instance=ExtResource("104_uft80")]
+visible = false
+
+[node name="spikes" parent="." instance=ExtResource("105_7irfr")]
+visible = false
+
+[node name="spikesHidden" parent="." instance=ExtResource("106_he20c")]
+visible = false
+
+[node name="spikesLarge" parent="." instance=ExtResource("107_gm0ks")]
+visible = false
+
+[node name="stones" parent="." instance=ExtResource("108_fts5y")]
+visible = false
+
+[node name="tree" parent="." instance=ExtResource("109_ysv5u")]
+visible = false
+
+[node name="treePine" parent="." instance=ExtResource("110_ytb1m")]
+visible = false
+
+[node name="treePineSmall" parent="." instance=ExtResource("111_mfei5")]
+visible = false
+
+[node name="treePineSmallSnow" parent="." instance=ExtResource("112_01wgl")]
+visible = false
+
+[node name="treePineSnow" parent="." instance=ExtResource("113_gctfn")]
+visible = false
+
+[node name="treeSnow" parent="." instance=ExtResource("114_x65gh")]
+visible = false

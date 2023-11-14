@@ -14,3 +14,8 @@ mesh = SubResource("CapsuleMesh_312e6")
 
 [node name="player colision" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_somas")
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.490061, 0)
+
+[node name="cam" type="Camera3D" parent="head"]
