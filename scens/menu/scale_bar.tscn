@@ -1,0 +1,157 @@
+[gd_scene load_steps=17 format=3 uid="uid://bgdjbw7dn7rpf"]
+
+[ext_resource type="Script" path="res://scaleBar.gd" id="1_h4k3s"]
+[ext_resource type="Texture2D" uid="uid://dj7wyq1ii0kq4" path="res://графика/ui/active/size1 active.png" id="2_f0ac5"]
+[ext_resource type="Texture2D" uid="uid://cd6t5t28xioec" path="res://графика/ui/size1.png" id="3_eisj3"]
+[ext_resource type="Texture2D" uid="uid://bt6w4glmq711h" path="res://графика/ui/active/size2 active.png" id="4_7psve"]
+[ext_resource type="Texture2D" uid="uid://dky82p0dt67ke" path="res://графика/ui/size2.png" id="5_wgg7h"]
+[ext_resource type="Texture2D" uid="uid://ct2iqbr0dgk7d" path="res://графика/ui/active/size3 active.png" id="6_fadm1"]
+[ext_resource type="Texture2D" uid="uid://bvaqb0buwplsd" path="res://графика/ui/size3.png" id="7_yb45g"]
+[ext_resource type="Texture2D" uid="uid://7alhj3o5v7n8" path="res://графика/ui/active/size4 active.png" id="8_8o1r6"]
+[ext_resource type="Texture2D" uid="uid://cjouwown1be5l" path="res://графика/ui/size4.png" id="9_g4gmc"]
+[ext_resource type="Texture2D" uid="uid://di3vgyn68fxw4" path="res://графика/ui/active/size5 active.png" id="10_bkc1l"]
+[ext_resource type="Texture2D" uid="uid://bn5wx416y8w3i" path="res://графика/ui/size5.png" id="11_0b42j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_swfwb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f0ac5")
+}],
+"loop": true,
+"name": &"active",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_eisj3")
+}],
+"loop": true,
+"name": &"no active",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ldv8v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_7psve")
+}],
+"loop": true,
+"name": &"active",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_wgg7h")
+}],
+"loop": true,
+"name": &"no active",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1t318"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_fadm1")
+}],
+"loop": true,
+"name": &"active",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_yb45g")
+}],
+"loop": true,
+"name": &"no active",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7bbes"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_8o1r6")
+}],
+"loop": true,
+"name": &"active",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_g4gmc")
+}],
+"loop": true,
+"name": &"no active",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5dwbm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_bkc1l")
+}],
+"loop": true,
+"name": &"active",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_0b42j")
+}],
+"loop": true,
+"name": &"no active",
+"speed": 5.0
+}]
+
+[node name="scaleBar" type="Control"]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 0
+script = ExtResource("1_h4k3s")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 364.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="маленький1" type="AnimatedSprite2D" parent="HBoxContainer"]
+position = Vector2(10, 15)
+sprite_frames = SubResource("SpriteFrames_swfwb")
+animation = &"active"
+autoplay = "active"
+
+[node name="маленький2" type="AnimatedSprite2D" parent="HBoxContainer"]
+position = Vector2(35, 15)
+sprite_frames = SubResource("SpriteFrames_ldv8v")
+animation = &"no active"
+autoplay = "no active"
+
+[node name="маленький3" type="AnimatedSprite2D" parent="HBoxContainer"]
+position = Vector2(60, 15)
+sprite_frames = SubResource("SpriteFrames_1t318")
+animation = &"no active"
+autoplay = "no active"
+
+[node name="маленький4" type="AnimatedSprite2D" parent="HBoxContainer"]
+position = Vector2(85, 15)
+sprite_frames = SubResource("SpriteFrames_7bbes")
+animation = &"no active"
+autoplay = "no active"
+
+[node name="маленький5" type="AnimatedSprite2D" parent="HBoxContainer"]
+position = Vector2(110, 15)
+sprite_frames = SubResource("SpriteFrames_5dwbm")
+animation = &"no active"
+autoplay = "no active"

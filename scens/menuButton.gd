@@ -8,7 +8,8 @@ func _on_quit_button_down():
 	get_tree().quit()
 func _on_play_button_down():
 	if Menu.newMenu == false:
-		get_tree().change_scene_to_file("res://scens/levels/level1.tscn")
+#		get_tree().change_scene_to_file("res://scens/levels/level1.tscn")
+		get_tree().change_scene_to_file("res://scens/levels/3d_level.tscn")
 	if Menu.newMenu == true:
 		get_tree().change_scene_to_file("res://scens/menu_for_level.tscn")
 

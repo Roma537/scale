@@ -1,7 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://d2dmdqcfc73kr"]
+[gd_scene load_steps=11 format=3 uid="uid://d2dmdqcfc73kr"]
 
+[ext_resource type="Script" path="res://scens/levels/meneger.gd" id="1_0f6oj"]
 [ext_resource type="PackedScene" uid="uid://numm1kehyyfx" path="res://heroes/GG/player_3D.tscn" id="1_7ib5h"]
 [ext_resource type="PackedScene" uid="uid://6gusslwlqs10" path="res://scens/cube.tscn" id="2_h4jve"]
+[ext_resource type="PackedScene" uid="uid://cm76sdicy8nuo" path="res://scens/menu/pause_menu.tscn" id="3_2lx13"]
+[ext_resource type="AudioStream" uid="uid://c16obbqhp0bl" path="res://music/саунд трек.mp3" id="5_7xd07"]
+[ext_resource type="PackedScene" uid="uid://bgdjbw7dn7rpf" path="res://scens/menu/scale_bar.tscn" id="5_lkpyn"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_twwtg"]
 size = Vector3(25, 25, 0.5)
@@ -16,6 +20,11 @@ size = Vector3(25, 0.5, 25)
 size = Vector3(25, 0.5, 25)
 
 [node name="3D level" type="StaticBody3D"]
+process_mode = 1
+
+[node name="meneger" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("1_0f6oj")
 
 [node name="wall colision" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.25, 12.25)
@@ -75,3 +84,97 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.46958, 0.909465, -1.50842)
 
 [node name="cube" parent="." instance=ExtResource("2_h4jve")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.64487, 3.28259, -2.27756)
+
+[node name="ui" type="CanvasLayer" parent="."]
+
+[node name="pauseMenu" parent="ui" instance=ExtResource("3_2lx13")]
+
+[node name="menu" parent="ui/pauseMenu" index="0"]
+visible = true
+
+[node name="settings" type="Control" parent="ui"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="settings" type="Panel" parent="ui/settings"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -373.0
+offset_top = -169.0
+offset_right = 373.0
+offset_bottom = 169.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ui/settings/settings"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -41.5
+offset_top = 18.0
+offset_right = 41.5
+offset_bottom = 63.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Settings"
+horizontal_alignment = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ui/settings/settings"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -344.0
+offset_top = -80.0
+offset_right = 344.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ui/settings/settings/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ui/settings/settings/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "music"
+
+[node name="HSlider" type="HSlider" parent="ui/settings/settings/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+min_value = -100.0
+max_value = 0.0
+
+[node name="in the menu" type="Button" parent="ui/settings/settings/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "in the menu"
+
+[node name="scaleBar" parent="ui" instance=ExtResource("5_lkpyn")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("5_7xd07")
+volume_db = -19.676
+autoplay = true
+
+[connection signal="pressed" from="ui/pauseMenu/menu/VBoxContainer/resume" to="meneger" method="_on_resume_pressed"]
+[connection signal="pressed" from="ui/pauseMenu/menu/VBoxContainer/settings" to="meneger" method="_on_settings_pressed"]
+[connection signal="pressed" from="ui/pauseMenu/menu/VBoxContainer/quit" to="meneger" method="_on_quit_pressed"]
+[connection signal="pressed" from="ui/settings/settings/VBoxContainer/in the menu" to="meneger" method="_on_in_the_menu_pressed"]
+
+[editable path="ui/pauseMenu"]
