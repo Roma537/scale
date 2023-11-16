@@ -4,17 +4,18 @@ var speed = 0.0
 @onready var head = $head
 @onready var cam = $head/cam
 
+var gravitiValue = 1
 const walk_SPEED = 5.0
 const run_SPEED = 8.0
 const SENS = 0.003
 const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+var JUMP_VELOCITY = 4.5
 const bob_freq = 2.0
 const bob_amp = 0.08
 var bob = 0.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") * Global.Jamp
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -26,9 +27,25 @@ func  _unhandled_input(event):
 		cam.rotation.x = clamp(cam.rotation.x, deg_to_rad(-90), deg_to_rad(90))
 
 func _physics_process(delta):
+	if Global.readi[0] == 1:
+		if Global.size == 1:
+			jampVelosity(1)
+	if Global.readi[1] == 1:
+		if Global.size == 2:
+			jampVelosity(2)
+	if Global.readi[2] == 1:
+		if Global.size == 3:
+			jampVelosity(3)
+	if Global.readi[3] == 1:
+		if Global.size == 4:
+			jampVelosity(4)
+	if Global.readi[4] == 1:
+		if Global.size == 5:
+			jampVelosity(5)
+	
 	# Add the gravity.
 	if not is_on_floor():
-		velocity.y -= gravity * delta
+		velocity.y -= gravity * delta * gravitiValue
 
 	# Handle Jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
@@ -69,3 +86,6 @@ func  _headbob(time) -> Vector3:
 	pos.y = sin(time * bob_freq) * bob_amp
 	pos.x = cos(time * bob_freq / 2) * bob_amp
 	return pos
+
+func jampVelosity(value):
+	JUMP_VELOCITY = 4 * value

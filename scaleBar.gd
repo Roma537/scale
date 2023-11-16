@@ -1,6 +1,5 @@
 extends Control
 
-@onready var readi = [1,1,0,1,0]
 @onready var active = [1, 0, 0, 0, 0]
 @onready var size1 = $"HBoxContainer/маленький1"
 @onready var size2 = $"HBoxContainer/маленький2"
@@ -17,7 +16,6 @@ func _ready():
 
 func _process(delta):
 
-	Global.readi = readi
 	if Input.is_action_pressed("1"):
 		Global.size = 1
 	if Input.is_action_pressed("2"):
@@ -62,7 +60,7 @@ func _process(delta):
 
 func presed():
 	active = [0, 0, 0, 0, 0]
-	if readi[Global.size - 1] == 1:
+	if Global.readi[Global.size - 1] == 1:
 		active[Global.size - 1] = 1
 	
 

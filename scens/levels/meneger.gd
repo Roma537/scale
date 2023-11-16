@@ -68,11 +68,13 @@ func saveGame ():
 	file.store_var(player.position.x)
 	file.store_var(player.position.y)
 	file.store_var(player.position.z)
+
 func loadGame ():
 	var file = FileAccess.open(savePath, FileAccess.READ)
 	player.position.x = file.get_var(player.position.x)
 	player.position.y = file.get_var(player.position.y)
 	player.position.z = file.get_var(player.position.z)
+
 	pass
 
 
@@ -84,6 +86,12 @@ func _on_settings_pressed():
 func _on_in_the_menu_pressed():
 	pauseMenu.show()
 	settings.hide()
+
+
+
+
+
+
 
 
 
