@@ -1,10 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://2sgdvvahti3r"]
+[gd_scene load_steps=12 format=3 uid="uid://2sgdvvahti3r"]
 
 [ext_resource type="Script" path="res://heroes/GG/player.gd" id="1_ao2ft"]
 [ext_resource type="Texture2D" uid="uid://8pd7i0cvjye4" path="res://графика/главный герой/гг.png" id="1_dm03l"]
-[ext_resource type="Texture2D" uid="uid://fejdxswi2rnc" path="res://графика/button/free-icon-arrow-button-6283272 (2).png" id="3_ca34o"]
-[ext_resource type="Texture2D" uid="uid://c5p1gde3jhvub" path="res://графика/button/free-icon-arrow-button-6283227 (2).png" id="4_cedwi"]
-[ext_resource type="Texture2D" uid="uid://bcg6brnjpokl7" path="res://графика/button/up.png" id="5_2drwg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w2hp1"]
 radius = 8.0
@@ -83,44 +80,3 @@ position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_tam61")
 animation = &"idel"
 autoplay = "idel"
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="left" type="TextureButton" parent="CanvasLayer"]
-offset_left = 27.0
-offset_top = 548.0
-offset_right = 104.0
-offset_bottom = 625.0
-texture_normal = ExtResource("3_ca34o")
-stretch_mode = 5
-
-[node name="right" type="TextureButton" parent="CanvasLayer"]
-offset_left = 278.0
-offset_top = 548.0
-offset_right = 355.0
-offset_bottom = 625.0
-texture_normal = ExtResource("4_cedwi")
-stretch_mode = 5
-
-[node name="up" type="TextureButton" parent="CanvasLayer"]
-offset_left = 160.0
-offset_top = 449.0
-offset_right = 237.0
-offset_bottom = 526.0
-texture_normal = ExtResource("5_2drwg")
-stretch_mode = 5
-
-[node name="Button" type="Button" parent="CanvasLayer"]
-offset_left = 14.0
-offset_top = 13.0
-offset_right = 67.0
-offset_bottom = 42.0
-text = "выйти"
-
-[connection signal="button_down" from="CanvasLayer/left" to="." method="_on_left_button_down"]
-[connection signal="button_up" from="CanvasLayer/left" to="." method="_on_left_button_up"]
-[connection signal="button_down" from="CanvasLayer/right" to="." method="_on_right_button_down"]
-[connection signal="button_up" from="CanvasLayer/right" to="." method="_on_right_button_up"]
-[connection signal="button_down" from="CanvasLayer/up" to="." method="_on_up_button_down"]
-[connection signal="button_up" from="CanvasLayer/up" to="." method="_on_up_button_up"]
-[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

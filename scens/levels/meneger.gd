@@ -3,7 +3,13 @@ extends Node
 @onready var music = $"../AudioStreamPlayer"
 @onready var player = $"../player"
 
-
+var one = Global.readi[0]
+var two = Global.readi[1]
+var three = Global.readi[2]
+var fore = Global.readi[3]
+var five = Global.readi[4]
+var six = Global.size
+var seven = Global.Jamp
 
 @onready var value = $"../ui/settings/settings/VBoxContainer/HBoxContainer/HSlider"
 @onready var settings = $"../ui/settings"
@@ -15,6 +21,13 @@ func  _ready():
 	loadGame()
 
 func  _process(delta):
+	one = Global.readi[0]
+	two = Global.readi[1]
+	three = Global.readi[2]
+	fore = Global.readi[3]
+	five = Global.readi[4]
+	six = Global.size
+	seven = Global.Jamp
 	if Input.is_action_just_pressed("ui_cancel"):
 		game_paused = !game_paused
 		
@@ -86,8 +99,6 @@ func _on_settings_pressed():
 func _on_in_the_menu_pressed():
 	pauseMenu.show()
 	settings.hide()
-
-
 
 
 
