@@ -154,3 +154,15 @@ autoplay = "idel"
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("7_76r5a")]
 position = Vector2(949, 402)
+
+[node name="ui2" type="CanvasLayer" parent="."]
+
+[node name="quit" type="Button" parent="ui2"]
+offset_left = 8.0
+offset_top = 21.0
+offset_right = 111.0
+offset_bottom = 57.0
+theme_override_font_sizes/font_size = 20
+text = "Quit"
+
+[connection signal="pressed" from="ui2/quit" to="." method="_on_quit_pressed"]

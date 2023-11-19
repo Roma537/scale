@@ -4,7 +4,6 @@ extends CharacterBody2D
 @onready var dioilogBoris = $"ДиологовоеОкно2"
 @onready var txt = $Label
 @onready var darkVuport = $DarkVuport
-@onready var ui = $CanvasLayer/q
 
 var study = 1
 var enterd = false
@@ -72,4 +71,5 @@ func _on_area_2d_body_entered(body):
 func _on_area_2d_body_exited(body):
 	if body.name == "player":
 		enterd = false
+
 
